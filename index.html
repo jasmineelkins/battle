@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle</title>
 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bubbler+One&family=Codystar&family=Covered+By+Your+Grace&family=Cutive+Mono&family=Gruppo&family=Italiana&family=La+Belle+Aurore&family=Meddon&family=Montserrat+Subrayada&family=Neucha&family=Nothing+You+Could+Do&family=Over+the+Rainbow&family=Pavanam&family=Poiret+One&family=Shadows+Into+Light+Two&family=Yusei+Magic&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/131bb444ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="shortcut icon" href="/cat-in-black-silhouette.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Battle!</h1>
+      <p>Click Play, then keep hitting Battle until someone dies.</p>
+      <input type="text" id="action" readonly="true" value="Battle action" />
+    </header>
+
+    <div id="status">
+      <div id="playerOne">
+        <textarea name="p1" id="p1" cols="30" rows="10" class="text"></textarea>
+      </div>
+      <div id="playerTwo">
+        <textarea name="p2" id="p2" cols="30" rows="10" class="text"></textarea>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      id="initBtn"
+      class="play"
+      value="Play/Reset"
+      onClick="initGame()"
+    >
+      Play/Reset
+    </button>
+
+    <button
+      type="button"
+      id="playBtn"
+      class="play"
+      value="Start Game"
+      onClick="startGame()"
+    >
+      Start Game
+    </button>
+  </body>
+</html>
